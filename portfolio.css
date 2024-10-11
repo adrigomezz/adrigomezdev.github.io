@@ -1,0 +1,560 @@
+/* Estilo personalizado para el navbar */
+.navbar-custom {
+    background-color: black;
+  }
+  
+  .navbar-custom .nav-link, 
+  .navbar-custom .navbar-brand {
+    color: white;
+  }
+  
+  .navbar-custom .social-icons a {
+    color: white;
+    margin-left: 15px;
+  }
+  
+  /* Estilo para centrar el contenido */
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Cambiado de height a min-height para mejor responsividad */
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Para evitar que los objetos flotantes salgan del contenedor */
+    padding: 20px; /* Añadido padding para margen interno en pantallas pequeñas */
+  }
+  
+  /* Círculo para imagen */
+  .circle-img {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Animación de escritura */
+  .typewriter {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(30, end) infinite, blink 0.75s step-end infinite;
+  }
+  
+  .typewriter span {
+    display: inline;
+  }
+  
+  .text-red {
+    color: red;
+  }
+  
+  .text-violet {
+    color: violet;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: black; }
+  }
+  
+  /* Texto justificado */
+  .normal-text {
+    margin-top: 20px;
+    color: black;
+    text-align: justify;
+    max-width: 620px;
+    padding: 0 20px; /* Añadido padding para mejor legibilidad en pantallas pequeñas */
+  }
+  
+  /* Animación para los elementos flotantes en el fondo */
+  .floating-objects {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .floating-objects span {
+    position: absolute;
+    font-size: 24px; /* Tamaño ajustado */
+    animation: float 15s linear infinite;
+    opacity: 0.8;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(100vh);
+    }
+    100% {
+      transform: translateY(-100vh); /* Flotar hacia arriba */
+    }
+  }
+  
+  /* Animación para el círculo de la imagen de perfil */
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .circle-img {
+    animation: slideDown 1s ease-out; /* Animación suave al bajar */
+  }
+  
+  /* Animación para las cards de experiencia */
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Animación de entrada desde arriba hacia abajo */
+  .card-animation {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideDownCards 1s forwards ease-out;
+  }
+  
+  /* Retraso para las cards de proyectos */
+  .project-item:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  
+  .project-item:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  .project-item:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes slideDownCards {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Margen superior para el título de proyectos */
+  .projects-section h2 {
+    margin-bottom: 100px; /* Espacio entre el título y las cards */
+  }
+  
+  .projects-section {
+    margin-bottom: 100px; /* Espacio considerable debajo de la sección de proyectos */
+  }
+  
+  /* Efecto de crecimiento y clickeable */
+  .project-card {
+    transition: transform 0.3s ease; /* Transición suave */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+  }
+  
+  /* Posicionamiento y duración de la animación para cada elemento */
+  .floating-objects span:nth-child(1) {
+    left: 10%;
+    animation-duration: 12s;
+  }
+  
+  .floating-objects span:nth-child(2) {
+    left: 20%;
+    animation-duration: 18s;
+  }
+  
+  .floating-objects span:nth-child(3) {
+    left: 30%;
+    animation-duration: 15s;
+  }
+  
+  .floating-objects span:nth-child(4) {
+    left: 40%;
+    animation-duration: 16s;
+  }
+  
+  .floating-objects span:nth-child(5) {
+    left: 50%;
+    animation-duration: 14s;
+  }
+  
+  .floating-objects span:nth-child(6) {
+    left: 60%;
+    animation-duration: 20s;
+  }
+  
+  .floating-objects span:nth-child(7) {
+    left: 70%;
+    animation-duration: 17s;
+  }
+  
+  .floating-objects span:nth-child(8) {
+    left: 80%;
+    animation-duration: 13s;
+  }
+  
+  .floating-objects span:nth-child(9) {
+    left: 90%;
+    animation-duration: 19s;
+  }
+  
+  /* Colores de los objetos flotantes */
+  .floating-objects span:nth-child(1) {
+    color: rgba(255, 0, 0, 0.7); /* Rojo */
+  }
+  
+  .floating-objects span:nth-child(2) {
+    color: rgba(255, 255, 0, 0.7); /* Amarillo */
+  }
+  
+  .floating-objects span:nth-child(3) {
+    color: rgba(0, 255, 0, 0.7); /* Verde */
+  }
+  
+  .floating-objects span:nth-child(4) {
+    color: rgba(128, 0, 128, 0.7); /* Morado */
+  }
+  
+  .floating-objects span:nth-child(5) {
+    color: rgba(255, 165, 0, 0.7); /* Naranja */
+  }
+  
+  .floating-objects span:nth-child(6) {
+    color: rgba(0, 0, 255, 0.7); /* Azul */
+  }
+  
+  .floating-objects span:nth-child(7) {
+    color: rgba(255, 105, 180, 0.7); /* Rosa */
+  }
+  
+  .floating-objects span:nth-child(8) {
+    color: rgba(75, 0, 130, 0.7); /* Índigo */
+  }
+  
+  .floating-objects span:nth-child(9) {
+    color: rgba(255, 255, 255, 0.7); /* Blanco */
+  }
+  
+  .skills-section {
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 60px 20px; /* Espaciado alrededor del contenido */
+    min-height: 100vh; /* Cambiado de height a min-height para mejor responsividad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px; /* Espacio entre la sección de habilidades y proyectos */
+    position: relative; /* Necesario para posicionar los objetos flotantes */
+    overflow: hidden; /* Ocultar cualquier objeto que sobresalga */
+    z-index: 1; /* Asegúrate de que la sección tenga un z-index mayor que los objetos flotantes */
+    flex-direction: column; /* Añadido para alinear elementos verticalmente en pantallas pequeñas */
+  }
+  
+  .skills-title {
+    text-align: center;
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 50px; /* Reducido para mejor espaciado en móviles */
+    color: black; /* Color del texto */
+  }
+  
+  .skills-card {
+    border: 2px solid black; /* Borde negro */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    flex-wrap: wrap; /* Para que los círculos se ajusten en pantallas pequeñas */
+    justify-content: center; /* Centrar los círculos */
+    align-items: center;
+    padding: 20px; /* Espaciado interno de la tarjeta */
+    background-color: white; /* Fondo blanco para la tarjeta */
+    width: 90%; /* Ancho de la tarjeta */
+    max-width: 900px; /* Ancho máximo para evitar que se expanda demasiado */
+    margin: 0 auto; /* Centra la tarjeta horizontalmente */
+  }
+  
+  .skills-circle {
+    width: 90px; /* Ajusta según sea necesario */
+    height: 90px; /* Ajusta según sea necesario */
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: shadowPulse 1.5s infinite; /* Aplicar la animación de sombra intermitente */
+    margin: 20px; /* Añadido margen para separación en pantallas pequeñas */
+  }
+  
+  .skills-circle img {
+    width: 100%; /* Ancho completo de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    object-fit: cover; /* Ajuste de la imagen */
+  }
+  
+  /* Objetos flotantes específicos para la sección de habilidades */
+  .floating-objects-skills {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .floating-objects-skills span {
+    position: absolute;
+    font-size: 20px; /* Ajusta según sea necesario */
+    animation: floatSkills 15s linear infinite;
+    opacity: 0.8;
+  }
+  
+  @keyframes floatSkills {
+    0% {
+      transform: translateY(100vh);
+    }
+    100% {
+      transform: translateY(-100vh); /* Flotar hacia arriba */
+    }
+  }
+  
+  /* Colores de los objetos flotantes en la sección de habilidades */
+  .floating-objects-skills span:nth-child(1) {
+    left: 10%;
+    animation-duration: 12s;
+    color: rgba(255, 99, 71, 0.7); /* Tomato */
+  }
+  
+  .floating-objects-skills span:nth-child(2) {
+    left: 20%;
+    animation-duration: 16s;
+    color: rgba(75, 0, 130, 0.7); /* Indigo */
+  }
+  
+  .floating-objects-skills span:nth-child(3) {
+    left: 30%;
+    animation-duration: 14s;
+    color: rgba(0, 206, 209, 0.7); /* DarkTurquoise */
+  }
+  
+  .floating-objects-skills span:nth-child(4) {
+    left: 40%;
+    animation-duration: 18s;
+    color: rgba(238, 130, 238, 0.7); /* Violet */
+  }
+  
+  .floating-objects-skills span:nth-child(5) {
+    left: 50%;
+    animation-duration: 15s;
+    color: rgba(255, 165, 0, 0.7); /* Orange */
+  }
+  
+  .floating-objects-skills span:nth-child(6) {
+    left: 60%;
+    animation-duration: 19s;
+    color: rgba(0, 128, 128, 0.7); /* Teal */
+  }
+  
+  .floating-objects-skills span:nth-child(7) {
+    left: 70%;
+    animation-duration: 17s;
+    color: rgba(255, 20, 147, 0.7); /* DeepPink */
+  }
+  
+  .floating-objects-skills span:nth-child(8) {
+    left: 80%;
+    animation-duration: 13s;
+    color: rgba(34, 139, 34, 0.7); /* ForestGreen */
+  }
+  
+  .floating-objects-skills span:nth-child(9) {
+    left: 90%;
+    animation-duration: 20s;
+    color: rgba(173, 216, 230, 0.7); /* LightBlue */
+  }
+  
+  .button-space {
+    margin: 20px 0; /* Espacio entre el texto y el botón */
+  }
+  
+  .download-btn {
+    display: inline-block; /* Asegura que se comporta como un bloque en línea */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #bc320f; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de la fuente */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    margin-top: 20px; /* Espacio adicional superior */
+  }
+  
+  .download-btn:hover {
+    background-color: #0c3764; /* Color de fondo al pasar el ratón */
+  }
+  
+  @keyframes shadowPulse {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    }
+  }
+  
+  .skills-circle {
+    animation: shadowPulse 1.5s infinite; /* Aplicar la animación */
+  }
+  
+  /* Espacio considerable entre la sección de proyectos y el footer */
+  .space-before-footer {
+    height: 100px; /* Puedes ajustar la altura para más o menos espacio */
+  }
+  
+  /* Estilo del footer */
+  .site-footer {
+    background-color: #000; /* Color negro de fondo */
+    color: #fff; /* Texto en blanco */
+    padding: 20px 0; /* Espacio dentro del footer */
+    text-align: center;
+  }
+  
+  .footer-content p {
+    margin: 5px 0; /* Separación entre los dos textos */
+    font-size: 0.9rem; /* Tamaño de texto pequeño */
+  }
+  
+  /* Responsividad para pantallas pequeñas */
+  @media (max-width: 768px) {
+    /* Ajustes para el content-wrapper */
+    .content-wrapper {
+      padding: 20px;
+      min-height: auto;
+    }
+  
+    /* Reducir el tamaño de la imagen de perfil */
+    .circle-img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    /* Ajustes para la sección de habilidades */
+    .skills-section {
+      padding: 40px 20px;
+    }
+  
+    .skills-title {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+  
+    .skills-card {
+      width: 100%;
+      max-width: none;
+    }
+  
+    .skills-circle {
+      width: 70px;
+      height: 70px;
+      margin: 10px;
+    }
+  
+    /* Distribución de los círculos de habilidades en 2 columnas */
+    .skills-card {
+      display: flex;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  
+    /* Ajustes para la sección de proyectos */
+    .projects-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+  
+    /* Ajustes para el texto normal */
+    .normal-text {
+      padding: 0 10px;
+    }
+  
+    /* Ajustes para el botón de descarga */
+    .download-btn {
+      width: 100%;
+      max-width: 200px;
+    }
+  
+    .footer-content p {
+      font-size: 0.8rem; /* Reducir el tamaño de texto en pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Reducir aún más el tamaño de la imagen de perfil */
+    .circle-img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    /* Ajustes para el título de habilidades */
+    .skills-title {
+      font-size: 1.2rem;
+    }
+  
+    /* Ajustes para los círculos de habilidades */
+    .skills-circle {
+      width: 60px;
+      height: 60px;
+    }
+  
+    /* Ajustes para el texto flotante */
+    .floating-objects-skills span {
+      font-size: 16px;
+    }
+  
+    .floating-objects-skills h4 {
+      font-size: 0.8rem;
+    }
+  
+    /* Ajustes para el footer */
+    .footer-content p {
+      font-size: 0.75rem; /* Aún más pequeño en pantallas muy pequeñas */
+    }
+  }
