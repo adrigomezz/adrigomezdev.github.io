@@ -1,0 +1,198 @@
+/* ESTILOS GLOBALES
+-------------------------------------------------- */
+
+/* Navbar personalizada */
+.navbar-custom {
+  background-color: black;
+}
+
+.navbar-custom .nav-link, 
+.navbar-custom .navbar-brand {
+  color: white;
+}
+
+.navbar-custom .social-icons a {
+  color: white;
+  margin-left: 15px;
+}
+
+/* Personalización del Carrusel
+-------------------------------------------------- */
+.carousel {
+  margin-bottom: 4rem; /* Reducir el margen en pantallas móviles más abajo */
+}
+
+.carousel-caption {
+  bottom: 15rem;
+  z-index: 10;
+  text-align: center;
+}
+
+.carousel-item {
+  height: 41rem;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel {
+    margin-bottom: 1rem; /* Reducir aún más el espacio entre carrusel y sección de descripción */
+  }
+
+  .carousel-item {
+    height: auto; /* Permitir que el carrusel se ajuste dinámicamente según el contenido */
+  }
+
+  .carousel-caption {
+    bottom: 2rem; /* Ajustar el texto para que esté más cerca de la parte inferior en móviles */
+    padding: 1rem;
+    font-size: 0.9rem; /* Reducir el tamaño del texto en móviles */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* Reducir tamaño de texto para caber en pantallas pequeñas */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%; /* Reducir el tamaño de las flechas en móviles */
+  }
+}
+
+/* Sección de descripción del proyecto
+-------------------------------------------------- */
+@media (max-width: 768px) {
+  /* Añadir margen inferior a la imagen en móviles */
+  .project-description img {
+    margin-bottom: 10px;
+  }
+}
+
+/* Sección de Tecnologías
+-------------------------------------------------- */
+#technologies h2 {
+  margin-bottom: 2rem;
+}
+
+.tech-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.tech-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tech-title {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.tech-description {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+/* Sección demo
+-------------------------------------------------- */
+.demo-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 300px;
+  margin: 0 auto 2rem;
+}
+
+.demo-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
+
+.platforms-info {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Botones personalizados en la demo */
+.btn-black {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  border: none;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+  margin-bottom: 10px; /* Separar los botones */
+}
+
+.btn-black:hover {
+  background-color: #d31515;
+}
+
+.demo-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* CONTENIDO DE MARKETING
+-------------------------------------------------- */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* CSS RESPONSIVO
+-------------------------------------------------- */
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* Espacio considerable entre la sección de proyectos y el footer */
+.space-before-footer {
+  height: 100px;
+}
+
+/* Estilo del footer */
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
