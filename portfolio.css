@@ -558,3 +558,12 @@
       font-size: 0.75rem; /* Aún más pequeño en pantallas muy pequeñas */
     }
   }
+
+  .project-item a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit;        /* Mantiene el color del texto original */
+  }
+  
+  .project-item a:hover {
+    text-decoration: none; /* Asegúrate de que al pasar el mouse no vuelva el subrayado */
+  }
