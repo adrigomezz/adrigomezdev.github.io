@@ -567,3 +567,11 @@
   .project-item a:hover {
     text-decoration: none; /* Asegúrate de que al pasar el mouse no vuelva el subrayado */
   }
+
+  /* Estilo para eliminar subrayado y color azul de los textos del footer */
+.site-footer p, 
+.project-card .card-title, 
+.project-card .card-text {
+  color: inherit; /* Mantiene el color original del texto */
+  text-decoration: none; /* Quita el subrayado */
+}
