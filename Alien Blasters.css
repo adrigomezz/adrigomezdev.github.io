@@ -24,6 +24,9 @@
 
 .carousel-item {
   height: 41rem;
+  display: flex;
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center;
 }
 
 .carousel-caption {
@@ -43,19 +46,25 @@
   }
 
   .carousel-caption {
-    bottom: 2rem;
+    bottom: 50%; /* Centra verticalmente los textos */
+    transform: translateY(50%); /* Ajuste fino para asegurar el centrado */
     padding: 1rem;
     font-size: 0.9rem;
     line-height: 1.2; /* Mejorar la legibilidad del texto */
+    text-align: center;
   }
 
   .carousel-caption h5 {
-    font-size: 1.2rem; /* Ajustar el tamaño del título */
+    font-size: 1rem; /* Reducir el tamaño del título para que no se corte */
     font-weight: bold;
+    white-space: nowrap; /* Evitar que se corte en varias líneas */
+    overflow: hidden; /* Prevenir el desbordamiento */
+    text-overflow: ellipsis;
   }
 
   .carousel-caption p {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Ajustar el tamaño del subtítulo */
+    line-height: 1.2; /* Mejorar legibilidad */
   }
 
   .carousel-control-prev,
