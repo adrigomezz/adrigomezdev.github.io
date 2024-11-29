@@ -32,36 +32,37 @@
   text-align: center;
 }
 
-/* Ajustes para el carrusel en móviles */
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
+  .carousel {
+    margin-bottom: 1rem;
+  }
+
+  .carousel-item {
+    height: auto;
+  }
+
   .carousel-caption {
-    bottom: 50%; /* Centra verticalmente los textos */
-    transform: translateY(50%); /* Ajuste fino para asegurar el centrado */
+    bottom: 2rem;
     padding: 1rem;
-    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.2; /* Mejorar la legibilidad del texto */
   }
 
   .carousel-caption h5 {
-    font-size: 1rem; /* Reducir el tamaño del título para que no se corte */
+    font-size: 1.2rem; /* Ajustar el tamaño del título */
     font-weight: bold;
-    white-space: nowrap; /* Evitar que se corte en varias líneas */
-    overflow: hidden; /* Prevenir el desbordamiento */
-    text-overflow: ellipsis;
   }
 
   .carousel-caption p {
-    font-size: 0.9rem; /* Ajustar el tamaño del subtítulo */
-    line-height: 1.2; /* Mejorar legibilidad */
+    font-size: 1rem;
   }
 
-  /* Ajustar márgenes para alineación uniforme entre todos los banners */
-  .carousel-item {
-    display: flex;
-    align-items: center; /* Centra todo el contenido verticalmente */
-    justify-content: center;
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
   }
 }
-
 
 /* Tecnologías
 -------------------------------------------------- */
