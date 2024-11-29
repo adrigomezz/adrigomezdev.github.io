@@ -27,7 +27,7 @@
 }
 
 .carousel-caption {
-  bottom: 12rem; /* Bajamos los textos ligeramente */
+  bottom: 16rem; /* Bajamos los textos ligeramente */
   z-index: 10;
   text-align: center;
 }
