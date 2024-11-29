@@ -27,7 +27,7 @@
 }
 
 .carousel-caption {
-  bottom: 9rem; /* Bajamos los textos ligeramente */
+  bottom: 15rem;
   z-index: 10;
   text-align: center;
 }
@@ -43,7 +43,7 @@
   }
 
   .carousel-caption {
-    bottom: 8rem; /* Ajuste adicional para móviles */
+    bottom: 2rem;
     padding: 1rem;
     font-size: 0.9rem;
     line-height: 1.2; /* Mejorar la legibilidad del texto */
