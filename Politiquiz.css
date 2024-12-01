@@ -1,0 +1,154 @@
+/* ESTILOS GLOBALES
+-------------------------------------------------- */
+
+/* Navbar personalizada */
+.navbar-custom {
+    background-color: black;
+  }
+  
+  .navbar-custom .nav-link,
+  .navbar-custom .navbar-brand {
+    color: white;
+  }
+  
+  .navbar-custom .social-icons a {
+    color: white;
+    margin-left: 15px;
+  }
+  
+  /* Carrusel
+  -------------------------------------------------- */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  
+  .carousel-item {
+    height: 41rem;
+  }
+  
+  .carousel-caption {
+    bottom: 15rem;
+    z-index: 10;
+    text-align: center;
+  }
+  
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .carousel {
+      margin-bottom: 1rem;
+    }
+  
+    .carousel-item {
+      height: auto;
+    }
+  
+    .carousel-caption {
+      bottom: 2rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      line-height: 1.2; /* Mejorar la legibilidad del texto */
+    }
+  
+    .carousel-caption h5 {
+      font-size: 1.2rem; /* Ajustar el tamaño del título */
+      font-weight: bold;
+    }
+  
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 10%;
+    }
+  }
+  
+  /* Tecnologías
+  -------------------------------------------------- */
+  #technologies h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .tech-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #e9ecef;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .tech-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .tech-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Demo
+  -------------------------------------------------- */
+  .demo-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 300px;
+    margin: 0 auto 2rem;
+  }
+  
+  .demo-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .platforms-info {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .btn-black {
+    background-color: #310fc7;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .btn-black:hover {
+    background-color: #c18b35f4;
+    color: #ffffff;
+  }
+  
+  .demo-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Footer
+  -------------------------------------------------- */
+  .site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
